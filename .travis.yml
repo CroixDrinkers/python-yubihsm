@@ -17,8 +17,6 @@ matrix:
   include:
     - os: linux
       python: 2.7
-      env:
-        - DISPATCHER="ON"
     - os: linux
       python: 3.4
     - os: linux
@@ -31,14 +29,16 @@ matrix:
         - DISPATCHER="ON"
     - os: linux
       python: pypy2.7-6.0
+      env:
+        - DISPATCHER="ON"
     - os: linux
       python: pypy3.5-6.0
+      env:
+        - DISPATCHER="ON"
     - os: osx
       language: generic
       osx_image: xcode10.1
       sudo: required
-      env:
-        - DISPATCHER="ON"
 
 cache:
   directories:
